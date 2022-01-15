@@ -15,6 +15,21 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+<script>
+    function leermas() {
+        document.getElementById("btnmas").style.display="none";
+        document.getElementById("btnmenos").style.display="block";
+        document.getElementById("mas").style.display="block";
+    }
+
+    function leermenos() {
+        document.getElementById("btnmas").style.display="block";
+        document.getElementById("btnmenos").style.display="none";
+        document.getElementById("mas").style.display="none";
+    }
+
+</script>
+
 </head>
 
 <body>
@@ -109,11 +124,10 @@
         <!-- VIDEO CANCION NUEVA -->
         <a name='karma'></a>
         <div class="card">
-            <br><br>
+            <br>
             <div class="card-body">
                 <img src="img/Karma IMG.png" class="d-block w-100" alt="...">
             </div>
-
         </div>
         <!-- fin CANCION NUEVA -->
 
@@ -152,30 +166,36 @@
         <a name='resena'></a>
         <div class="card resena">
             <div class="card-title resenaTitulo p-3">
-                <br><br><br>La Banda de los Corazones 
+                <br><br>La Banda de los Corazones 
             </div>  
             <div class="card-body">
-                <p>
-                    Robamos nuestro nombre de libros impopulares y violentos donde niños hacen justicia con sus propias manos en un mundo en decadencia.
-                </p>
-                <p>
-                    La gente nos ha dicho que hacemos M-Pop, Shoegaze, Powerpop, Dream Punk o Kilter Pop. La única verdad es que sólo es música melancólica hecha por amigos que quiere ser cantada, canciones que nacieron para reflejar sentimientos muy humanos en melodías al alcance de cualquiera.
-                </p>
-                <p>
-                    Crecimos escuchando, Blur, Nirvana, Radiohead y los Beatles, y mucho Britt Pop y Grunge de los noventas pero nuestras letras están inspiradas en la sinceridad de la música de nuestros padres. Las rancheras y los boleros nos educaron con sus letras y estamos orgullosos de ello.
-                </p>
-                <p>
-                    Nacimos y crecimos en el oriente de la Ciudad de México, y en nuestra alineación siempre figuran instrumentistas dedicados y buenas personas, amigos y piratas citadinos. 
-                </p>
-                <p>
-                    Al vernos en acción encontrarás un espectáculo audiovisual dedicado con una curva emocional que va desde canciones veloces e intrépidas que te regresarán al momento en el que fuiste feliz, pasando por solemnes baladas que invitan a cantar fuerte.
-                </p>
-                <p>
-                    Al momento hemos coleccionando varios sencillos, varias decenas de escenarios, algunos festivales organizados por nosotros y un set de más de una hora de música original cuidadosamente seleccionada.
-                </p>
-                <p>
-                    A pesar de ser todo terreno y agradecer cada escenario que nos prestan, siempre nos preocupamos por nuestro sonido y por cuidar cada detalle en nuestras presentaciones. Lo más importante siempre será que nuestros espectadores nos escuchen en las mejores condiciones. Esperamos que nos veamos pronto. :D
-                </p>
+                <div class="fijo">
+                    <p>
+                        Robamos nuestro nombre de libros impopulares y violentos donde niños hacen justicia con sus propias manos en un mundo en decadencia.
+                    </p>
+                    <p>
+                        La gente nos ha dicho que hacemos M-Pop, Shoegaze, Powerpop, Dream Punk o Kilter Pop. La única verdad es que sólo es música melancólica hecha por amigos que quiere ser cantada, canciones que nacieron para reflejar sentimientos muy humanos en melodías al alcance de cualquiera.
+                    </p>
+                    <p>
+                        Crecimos escuchando, Blur, Nirvana, Radiohead y los Beatles, y mucho Britt Pop y Grunge de los noventas pero nuestras letras están inspiradas en la sinceridad de la música de nuestros padres. Las rancheras y los boleros nos educaron con sus letras y estamos orgullosos de ello.
+                    </p>
+                    <a onclick="leermas()" id="btnmas">[ Leer más... ]</a>
+                </div>
+                <div class="mas" id='mas'>
+                    <p>
+                        Nacimos y crecimos en el oriente de la Ciudad de México, y en nuestra alineación siempre figuran instrumentistas dedicados y buenas personas, amigos y piratas citadinos. 
+                    </p>
+                    <p>
+                        Al vernos en acción encontrarás un espectáculo audiovisual dedicado con una curva emocional que va desde canciones veloces e intrépidas que te regresarán al momento en el que fuiste feliz, pasando por solemnes baladas que invitan a cantar fuerte.
+                    </p>
+                    <p>
+                        Al momento hemos coleccionando varios sencillos, varias decenas de escenarios, algunos festivales organizados por nosotros y un set de más de una hora de música original cuidadosamente seleccionada.
+                    </p>
+                    <p>
+                        A pesar de ser todo terreno y agradecer cada escenario que nos prestan, siempre nos preocupamos por nuestro sonido y por cuidar cada detalle en nuestras presentaciones. Lo más importante siempre será que nuestros espectadores nos escuchen en las mejores condiciones. Esperamos que nos veamos pronto. :D
+                    </p>
+                    <a onclick="leermenos()" id="btnmenos">[ Leer menos... ]</a>
+                </div>
             </div>
         </div>
         <!-- finRESEÑA -->
@@ -399,7 +419,7 @@
         <div class="fotoGrande">
         <div class="modal" id="myModal1">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Bruno</h4>
@@ -414,7 +434,7 @@
 
         <div class="modal" id="myModal2">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Karma</h4>
@@ -429,7 +449,7 @@
 
         <div class="modal" id="myModal3">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Choco</h4>
@@ -444,7 +464,7 @@
 
         <div class="modal" id="myModal4">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">IceCream</h4>
@@ -459,7 +479,7 @@
 
         <div class="modal" id="myModal5">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Herramentas Musicales</h4>
@@ -474,7 +494,7 @@
 
         <div class="modal" id="myModal6">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Yorch</h4>
@@ -489,7 +509,7 @@
 
         <div class="modal" id="myModal7">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Texas</h4>
@@ -504,7 +524,7 @@
 
         <div class="modal" id="myModal8">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">Pandemia</h4>
@@ -519,7 +539,7 @@
 
         <div class="modal" id="myModal9">
             <div class="modal-dialog ">
-                <div class="modal-content " style="width: 25rem;" >
+                <div class="modal-content " style="width: 23rem;" >
 
                     <div class="modal-header">
                         <h4 class="modal-title">LBDLC</h4>
