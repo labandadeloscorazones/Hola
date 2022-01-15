@@ -1,46 +1,541 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/9696f5c26d.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <title>Document</title>
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Reenie+Beanie&display=swap" rel="stylesheet">    <title>La Banda de los Corazones</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
+
 <body>
 
-  <div class="col-md-4 mx-auto mt-4">
-    <div class="card">
-        <div class="card-header mx-auto mt-4">
-            <img src="./descarga.png" alt="">
-        </div>
-        <hr>
+    <div class="container atras mt-3 auto ">
 
-        <div class="card-body mx-auto">
-          <div class="lehyenda">
-            <h1>La Banda de los Corazones</h1>
-            <p>Estamos haciendo la página, lo lograremos?
-            </p>
-          </div>
-
-          <div class="form-group mt-4">
-              <button type="button" class="btn  btn-block">
-                <i class="fab fa-facebook text.dark"></i>
-              </button>
-              <button type="button" class="btn  btn-block">
-                <i class="fab fa-instagram text.dark"></i>
-              </button>
-              <button type="button" class="btn  btn-block">
-                <i class="fab fa-youtube text.dark"></i>
-              </button>
-              <button type="button" class="btn btn-block">
-                <i class="fab fa-spotify text.dark"></i>
-              </button>
-          </div>
+        <div class="container ">
+            <br><br>
         </div>
+
+
+        <!-- NAVBAR -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light mb-4 pb-4 pt-4">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav navbar-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resena">La Banda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#karma">Karma</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fotos">Fotos</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#eventos">Eventos</a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#redes">Redes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        <!-- fin de NAVBAR  -->
+
+        <!-- CARRUCEL -->
+        <a name='inicio'></a>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Carrusel 0-10.jpg" class="d-block w-100" data-bs-interval="1500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0_Mesa de trabajo 1.jpg" class="d-block w-100" data-bs-interval="1500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-02.jpg" class="d-block w-100" data-bs-interval="1500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-03.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-04.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-05.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-06.jpg" class="d-block w-100" data-bs-interval="500"alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-07.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div>
+                <!-- <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-08.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div> -->
+                <div class="carousel-item">
+                    <img src="img/Carrusel 2.0-09.jpg" class="d-block w-100" data-bs-interval="500" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- fin de CARRUCEL -->
+
+        <!-- VIDEO CANCION NUEVA -->
+        <a name='karma'></a>
+        <div class="card">
+            <br><br>
+            <div class="card-body">
+                <img src="img/Karma IMG.png" class="d-block w-100" alt="...">
+            </div>
+
+        </div>
+        <!-- fin CANCION NUEVA -->
+
+        <!-- Video RESEÑA -->
+        <a name='v-resena'></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <video class="col-12" controls>
+                        <source src="img/Karma30sec.mp4" type="video/mp4">
+                        Tu navegador no soporta los vídeos de HTML5
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de video RESEÑA -->
+
+
+        <!-- SPOtiFY -->
+        <a name='spotify'></a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <iframe 
+                        src="https://open.spotify.com/embed?uri=spotify:artist:3ZG73eD0cLcoArdoiT0701"
+                        width="100%" height="280" frameborder="0" allowtransparency="true" 
+                        allow="encrypted-media">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de SPOtiFY -->
+
+        
+        <!-- RESEÑA -->
+        <a name='resena'></a>
+        <div class="card resena">
+            <div class="card-title resenaTitulo p-3">
+                <br><br><br>La Banda de los Corazones 
+            </div>  
+            <div class="card-body">
+                <p>
+                    Robamos nuestro nombre de libros impopulares y violentos donde niños hacen justicia con sus propias manos en un mundo en decadencia.
+                </p>
+                <p>
+                    La gente nos ha dicho que hacemos M-Pop, Shoegaze, Powerpop, Dream Punk o Kilter Pop. La única verdad es que sólo es música melancólica hecha por amigos que quiere ser cantada, canciones que nacieron para reflejar sentimientos muy humanos en melodías al alcance de cualquiera.
+                </p>
+                <p>
+                    Crecimos escuchando, Blur, Nirvana, Radiohead y los Beatles, y mucho Britt Pop y Grunge de los noventas pero nuestras letras están inspiradas en la sinceridad de la música de nuestros padres. Las rancheras y los boleros nos educaron con sus letras y estamos orgullosos de ello.
+                </p>
+                <p>
+                    Nacimos y crecimos en el oriente de la Ciudad de México, y en nuestra alineación siempre figuran instrumentistas dedicados y buenas personas, amigos y piratas citadinos. 
+                </p>
+                <p>
+                    Al vernos en acción encontrarás un espectáculo audiovisual dedicado con una curva emocional que va desde canciones veloces e intrépidas que te regresarán al momento en el que fuiste feliz, pasando por solemnes baladas que invitan a cantar fuerte.
+                </p>
+                <p>
+                    Al momento hemos coleccionando varios sencillos, varias decenas de escenarios, algunos festivales organizados por nosotros y un set de más de una hora de música original cuidadosamente seleccionada.
+                </p>
+                <p>
+                    A pesar de ser todo terreno y agradecer cada escenario que nos prestan, siempre nos preocupamos por nuestro sonido y por cuidar cada detalle en nuestras presentaciones. Lo más importante siempre será que nuestros espectadores nos escuchen en las mejores condiciones. Esperamos que nos veamos pronto. :D
+                </p>
+            </div>
+        </div>
+        <!-- finRESEÑA -->
+
+        
+        
+        <!-- FOTOS -->
+        <a name='fotos'></a>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb_Mesa de trabajo 1.jpg" data-bs-toggle="modal" data-bs-target="#myModal1" rel="noopener noreferrer">
+                        <img src="img/FotosWeb_Mesa de trabajo 1.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto " >
+                    <a href="img/FotosWeb-02.jpg" data-bs-toggle="modal" data-bs-target="#myModal2" rel="noopener noreferrer">
+                        <img src="img/FotosWeb-02.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb-03.jpg" data-bs-toggle="modal" data-bs-target="#myModal3" rel="noopener noreferrer">
+                        <img src="img/FotosWeb-03.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb-04.jpg"  data-bs-toggle="modal" data-bs-target="#myModal4" rel="noopener noreferrer">
+                        <img src="img/FotosWeb-04.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto " >
+                    <a href="img/FotosWeb-05.jpg" data-bs-toggle="modal" data-bs-target="#myModal5" rel="noopener noreferrer">
+                    <img src="img/FotosWeb-05.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb-06.jpg"  data-bs-toggle="modal" data-bs-target="#myModal6" rel="noopener noreferrer">
+                    <img src="img/FotosWeb-06.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb-07.jpg"  data-bs-toggle="modal" data-bs-target="#myModal7" rel="noopener noreferrer">
+                    <img src="img/FotosWeb-07.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto " >
+                    <a href="img/FotosWeb-08.jpg"  data-bs-toggle="modal" data-bs-target="#myModal8" rel="noopener noreferrer">
+                    <img src="img/FotosWeb-08.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+    
+                <div class="card col-4 auto">
+                    <a href="img/FotosWeb-09.jpg"  data-bs-toggle="modal" data-bs-target="#myModal9" rel="noopener noreferrer">
+                    <img src="img/FotosWeb-09.jpg" class="card-img-top " alt="...">
+                    </a>
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- fin FOTOS -->
+
+
+        <!-- EVENTOS 
+        <a name='eventos'></a>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+           
+                    <div class="container">
+                        <div class="row">
+                        
+                            <div class="card col-6">
+                                <img src="img/Carrusel-0.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h1 class="card-text">EVENTO 1</p>
+                                    <p class="card-text">Próximamente</p>
+                                </div>
+                            </div> 
+          
+                            <div class="card col-6">
+                                <img src="img/Carrusel-0.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h1 class="card-text">EVENTO 2</p>
+                                    <p class="card-text">Próximamente</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+           
+                    <div class="container">
+                        <div class="row">
+                        
+                            <div class="card col-6">
+                                <img src="img/Carrusel-0.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h1 class="card-text">EVENTO 3</p>
+                                    <p class="card-text">Próximamente</p>
+                                </div>
+                            </div> 
+          
+                            <div class="card col-6">
+                                <img src="img/Carrusel-0.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h1 class="card-text">EVENTO 4</p>
+                                    <p class="card-text">Próximamente</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+        fin EVENTOS -->
+
+        <!-- REDES -->
+        <a name='redes'></a>
+        <div class="container mt-3">
+            <div class="row">
+
+                <div class="col-2"> </div>
+
+                <div class="col-2">
+                    <a href="https://www.facebook.com/bandadeloscorazones" target="_blank">
+                    <img src="img/Logos_Mesa de trabajo 1.jpg"  width="75%" ></img>
+                    </a>
+                </div>
+
+                <div class="col-2">
+                    <a href="https://www.youtube.com/channel/UCwBJIXUnNqHTYDCIsttqJxA" target="_blank">
+                    <img src="img/Logos-02.jpg"  width="75%" >  </img>
+                    </a>                             
+                </div>
+
+                <div class="col-2">
+                    <a href="https://www.instagram.com/labandadeloscorazones/" target="_blank">
+                    <img src="img/Logos-03.jpg" width="75%">  </img>
+                    </a>                                
+                </div>
+
+                <div class="col-2">
+                    <a href="https://open.spotify.com/artist/3ZG73eD0cLcoArdoiT0701" target="_blank">
+                    <img src="img/Logos-04.jpg" width="75%" >  </img>
+                    </a>                                                 
+                </div>
+                <div class="col-2"> </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 correo">
+                    <br>
+                    <h2>Contacto: 
+                        <a href="mailto:labandadeloscorazones@gmail.com">labandadeloscorazones@gmail.com</a>
+                        </h2>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+        </div>
+
+        <div class="container mt-3 cpr">
+            <p>Todos los derechos reservados a La Banda de los Corazones©</p>
+            <p>CuboCabeza Records 2022</p>
+            <br><br><br>
+            <i><strong>This site is developed by Artcraft Designer & Developer Technologies</strong></i>
+
+            <br><br><br>
+        </div>
+
+
+        <!-- fin REDES -->
+
+        <!-- The Modal -->
+        <div class="fotoGrande">
+        <div class="modal" id="myModal1">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Bruno</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb_Mesa de trabajo 1.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal2">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Karma</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-02.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal3">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Choco</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-03.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal4">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">IceCream</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-04.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal5">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Herramentas Musicales</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-05.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal6">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Yorch</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-06.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal7">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Texas</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-07.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal8">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Pandemia</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-08.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="myModal9">
+            <div class="modal-dialog ">
+                <div class="modal-content " style="width: 40rem;" >
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">LBDLC</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/FotosWeb-09.jpg" class="card-img-top " alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-  </div>
 
-</body>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   
+  </body>
 </html>
